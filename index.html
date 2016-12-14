@@ -1,0 +1,506 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+
+<meta name="robots" content="noindex, nofollow">
+
+<meta name="googlebot" content="noindex, nofollow">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/js/lib/dummy.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<link rel="stylesheet" type="text/css" href="/css/result-light.css">
+
+
+
+
+
+
+
+
+
+<style type="text/css">
+
+body {
+
+background-color: green;
+
+}
+
+button {
+
+background-color: blue;
+
+color: white;
+
+border-radius: 100%;
+
+}
+
+
+
+.forQ {
+
+color: yellow;
+
+background-color: black;
+
+}
+
+
+
+.buttonHolder {
+
+text-align: center;
+
+}
+
+</style>
+
+
+
+<title></title>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script type='text/javascript'>//<![CDATA[
+
+window.onload=function(){
+
+//start button
+
+document.getElementById("startButton").onclick = startUp;
+
+
+
+//function startUp
+
+function startUp() {
+
+alert("Hai Meap here, and welcome to my quiz game. All you need to do is to answer these questions correctly. Hope all who play will enjoy! :)");
+
+start();
+
+document.getElementById("wrong").innerHTML = "";
+
+}
+
+
+
+//declaring globals
+
+var question1 = "1st question: What is the Chemical Symbol of Ammonium?"
+
+var question2 = "2nd question: What is Incomplete Combustion?"
+
+var question3 = "3rd question: What is the charge of Ununoctium(Uuo)?"
+
+var question4 = "4th question: What is Calcium Carbonate?"
+
+var question5 = "5th question: Have you ever drank Dihydrogen Oxide?"
+
+var question6 = "6th question: What is the Chemical Symbol of Barrelene?"
+
+var question7 = "7th question: True or false? Acids have a pH level below 7."
+
+var question8 = "8th question: Is sodium hydroxide (NaOH) an acid or base?"
+
+var question9 = "9th question: What is the fourth most abundant element in the universe in terms of mass?"
+
+var question10 = "10th question: The metal used to recover copper from a solution of copper sulphate is?"
+
+
+
+
+
+//function start
+
+function start() {
+
+document.getElementById("questionSpace").innerHTML = question1;
+
+document.getElementById("A").innerHTML = "NH4"
+
+document.getElementById("B").innerHTML = "NH2O6"
+
+document.getElementById("C").innerHTML = "H3O2"
+
+document.getElementById("D").innerHTML = "None of the above"
+
+document.getElementById("A").onclick = right1;
+
+document.getElementById("B").onclick = wrong;
+
+document.getElementById("C").onclick = wrong;
+
+document.getElementById("D").onclick = wrong;
+
+}
+
+
+
+//function right1
+
+function right1() {
+
+document.getElementById("wrong").innerHTML = "";
+
+document.getElementById("questionSpace").innerHTML = question2;
+
+document.getElementById("A").innerHTML = "CxHx + O2 ---> CO + H2O||or|| CxHx + O2 --> C + H2O"
+
+document.getElementById("B").innerHTML = "CxHx + S2 ---> C + H2S"
+
+document.getElementById("C").innerHTML = "CxHx + H2O ---> H3O2 + C"
+
+document.getElementById("D").innerHTML = "None of the above"
+
+document.getElementById("A").onclick = right2;
+
+document.getElementById("B, C, D").onclick = wrong;
+
+}
+
+
+
+//function right2
+
+function right2() {
+
+document.getElementById("wrong").innerHTML = "";
+
+document.getElementById("questionSpace").innerHTML = question3;
+
+document.getElementById("A").innerHTML = "3-"
+
+document.getElementById("B").innerHTML = "2-"
+
+document.getElementById("C").innerHTML = "1-"
+
+document.getElementById("D").innerHTML = "None of the above"
+
+document.getElementById("D").onclick = right3;
+
+document.getElementById("B, C, A").onclick = wrong;
+
+}
+
+
+
+//function right3
+
+function right3() {
+
+document.getElementById("wrong").innerHTML = "";
+
+document.getElementById("questionSpace").innerHTML = question4;
+
+document.getElementById("A").innerHTML = "CaCO2"
+
+document.getElementById("B").innerHTML = "CaCar"
+
+document.getElementById("C").innerHTML = "CaCO3"
+
+document.getElementById("D").innerHTML = "None of the above"
+
+document.getElementById("C").onclick = right4;
+
+document.getElementById("B, A, D").onclick = wrong;
+
+}
+
+
+
+//right4
+
+function right4() {
+
+document.getElementById("wrong").innerHTML = "";
+
+document.getElementById("questionSpace").innerHTML = question5;
+
+document.getElementById("A").innerHTML = "Yes"
+
+document.getElementById("B").innerHTML = "I don't know"
+
+document.getElementById("C").innerHTML = "It doesn't exist"
+
+document.getElementById("D").innerHTML = "No"
+
+document.getElementById("A").onclick = right5;
+
+document.getElementById("C, B D").onclick = wrong;
+
+};
+
+
+
+//function right5
+
+function right5() {
+
+document.getElementById("wrong").innerHTML = "";
+
+document.getElementById("questionSpace").innerHTML = question6;
+
+document.getElementById("A").innerHTML = "H3O2"
+
+document.getElementById("B").innerHTML = "BaC2"
+
+document.getElementById("C").innerHTML = "It doesn't exist"
+
+document.getElementById("D").innerHTML = "C8H8"
+
+document.getElementById("D").onclick = right6;
+
+document.getElementById("B, C, A").onclick = wrong;
+
+};
+
+
+
+//function right6
+
+function right6() {
+
+document.getElementById("wrong").innerHTML = "";
+
+document.getElementById("questionSpace").innerHTML = question7;
+
+document.getElementById("A").innerHTML = "False"
+
+document.getElementById("B").innerHTML = "True"
+
+document.getElementById("C").innerHTML = ""
+
+document.getElementById("D").innerHTML = ""
+
+document.getElementById("B").onclick = right7;
+
+document.getElementById("A, C, D").onclick = wrong;
+
+};
+
+
+
+//function right7
+
+function right7() {
+
+document.getElementById("wrong").innerHTML = "";
+
+document.getElementById("questionSpace").innerHTML = question8;
+
+document.getElementById("A").innerHTML = "Base"
+
+document.getElementById("B").innerHTML = "Acid"
+
+document.getElementById("C").innerHTML = "None of the above"
+
+document.getElementById("D").innerHTML = ""
+
+document.getElementById("A").onclick = right8;
+
+document.getElementById("B, C, D").onclick = wrong;
+
+};
+
+
+
+//function right8
+
+function right8() {
+
+document.getElementById("wrong").innerHTML = "";
+
+document.getElementById("questionSpace").innerHTML = question9;
+
+document.getElementById("A").innerHTML = "Carbon"
+
+document.getElementById("B").innerHTML = "Uranium"
+
+document.getElementById("C").innerHTML = "Germanium"
+
+document.getElementById("D").innerHTML = "Osmium"
+
+document.getElementById("A").onclick = right9;
+
+document.getElementById("B, C, D").onclick = wrong;
+
+};
+
+
+
+//function right9
+
+function right9() {
+
+document.getElementById("wrong").innerHTML = "";
+
+document.getElementById("questionSpace").innerHTML = question10;
+
+document.getElementById("A").innerHTML = "Na(Sodium)"
+
+document.getElementById("B").innerHTML = "Ag(Silver)"
+
+document.getElementById("C").innerHTML = "Hg(Mercury)"
+
+document.getElementById("D").innerHTML = "Fe(Iron)"
+
+document.getElementById("D").onclick = finalQuestion;
+
+document.getElementById("B, C, A").onclick = wrong;
+
+};
+
+
+
+
+
+function finalQuestion() {
+
+var ask = prompt("Do you like this game?");
+
+if (ask = "yes"){
+
+alert("Okay then!");
+
+};
+
+alert("Thank you for playing this game! <3 :)");
+
+start();
+
+};
+
+
+
+function wrong(){
+
+document.getElementById("wrong").innerHTML = "<p>You are wrong. Please try again.</p>"
+
+start();
+
+};
+
+}//]]>
+
+
+
+</script>
+
+
+
+
+
+</head>
+
+
+
+<body>
+
+<div class="buttonHolder">
+
+<button id="startButton">Click Me to Start!</button>
+
+<hr>
+
+<div id="questionSpace" class="forQ"></div>
+
+<button id="A"></button>
+
+<button id="B"></button>
+
+<button id="C"></button>
+
+<button id="D"></button>
+
+<div id="wrong"></div>
+
+<!--<script async src="//jsfiddle.net/meepbato/amLv9whr/embed/js,html,css,result/dark/"></script>-->
+
+</div>
+
+
+
+<script>
+
+// tell the embed parent frame the height of the content
+
+if (window.parent && window.parent.parent){
+
+window.parent.parent.postMessage(["resultsFrame", {
+
+height: document.body.getBoundingClientRect().height,
+
+slug: "None"
+
+}], "*")
+
+}
+
+</script>
+
+
+
+</body>
+
+
+
+</html>
+
+
+
+
