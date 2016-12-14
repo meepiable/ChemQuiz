@@ -1,1 +1,1 @@
-# DaUltimateChemQuiz
+# ChemQuiz
