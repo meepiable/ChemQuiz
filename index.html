@@ -62,37 +62,88 @@
 <style type="text/css">
 
 body {
-
-background-color: green;
-
+  background-color: green;
 }
-
 button {
-
-background-color: blue;
-
-color: white;
-
-border-radius: 100%;
-
+  background-color: blue;
+  color: white;
+  border-radius: 100%;
 }
-
-
 
 .forQ {
-
-color: yellow;
-
-background-color: black;
-
+  color: yellow;
+  background-color: black;
 }
 
-
-
 .buttonHolder {
+  text-align: center;
+}
 
-text-align: center;
+.eye {
+  background-color: green;
+  width: 20%;
+  height: 20%;
+  border-radius: 0%;
+}
 
+.arm {
+  background-color: #cacaca;
+  position: absolute;
+  top: 35%;
+  width: 5%;
+  height: 40%;
+}
+
+#head {
+  width: 30%;
+  height: 30%;
+  border-radius: 0%;
+  background-color: #dadada;
+  position: absolute;
+  left: 33%;
+  top: 5%;
+}
+
+#righteye {
+  position: absolute;
+  left: 20%;
+  top: 20%;
+}
+
+#lefteye {
+  position: absolute;
+  left: 60%;
+  top: 20%;
+}
+
+#mouth {
+  position: absolute;
+  width: 65%;
+  height: 15%;
+  left: 20%;
+  top: 70%;
+  background-color: red;
+}
+
+#body {
+  position: absolute;
+  left: 25%;
+  top: 35%;
+  width: 45%;
+  height: 55%;
+  background-color: #dadada;
+  text-align: center;
+  padding-top: 30px;
+}
+
+#rightarm {
+  position: absolute;
+  left: 20%;
+}
+
+#leftarm {
+  position: absolute;
+  left: 70%;
 }
 
 </style>
@@ -450,29 +501,30 @@ start();
 
 
 <body>
-
-<div class="buttonHolder">
-
-<button id="startButton">Click Me to Start!</button>
-
-<hr>
-
-<div id="questionSpace" class="forQ"></div>
-
-<button id="A"></button>
-
-<button id="B"></button>
-
-<button id="C"></button>
-
-<button id="D"></button>
-
-<div id="wrong"></div>
-
 <!--<script async src="//jsfiddle.net/meepbato/amLv9whr/embed/js,html,css,result/dark/"></script>-->
 
+<div id="robot">
+  <div id="head">
+    <div class="eye" id="righteye"></div>
+    <div class="eye" id="lefteye"></div>
+    <div id="mouth"></div>
+  </div>
+  <div class="arm" id="rightarm"></div>
+  <div id="body">
+    <p>ChemQuiz</p>
+    <div class="buttonHolder">
+<button id="startButton">Click Me to Start!</button>
+<hr>
+<div id="questionSpace" class="forQ"></div>
+<button id="A"></button>
+<button id="B"></button>
+<button id="C"></button>
+<button id="D"></button>
+<div id="wrong"></div>
 </div>
-
+  </div>
+  <div class="arm" id="leftarm"></div>
+</div>
 
 
 <script>
